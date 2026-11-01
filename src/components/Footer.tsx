@@ -2,7 +2,11 @@ import React from 'react';
 import { Apple, Play, ArrowUpRight } from 'lucide-react';
 import { InbblLogo } from './InbblLogo';
 
-export const Footer: React.FC = () => {
+interface FooterProps {
+  onOpenPrivacy?: () => void;
+}
+
+export const Footer: React.FC<FooterProps> = ({ onOpenPrivacy }) => {
   return (
     <>
       {/* High-Impact Bottom Call to Action */}
@@ -53,11 +57,21 @@ export const Footer: React.FC = () => {
             <span>— Same world. Closer.</span>
           </div>
           <div className="flex items-center gap-6 font-semibold text-stone-600">
-            <a href="#" className="hover:text-black transition">Privacy Policy</a>
-            <a href="#" className="hover:text-black transition">Terms</a>
+            <a 
+              href="#privacy" 
+              onClick={(e) => {
+                if (onOpenPrivacy) {
+                  e.preventDefault();
+                  onOpenPrivacy();
+                }
+              }} 
+              className="hover:text-black transition cursor-pointer"
+            >
+              Privacy Policy
+            </a>
             <a href="mailto:support@inbbl.com" className="hover:text-black transition">Contact</a>
           </div>
-          <p>© 2026 INBBL Inc. Real people. Real moments.</p>
+          <p>© 2026 Friend Universe (INBBL). All rights reserved.</p>
         </div>
       </footer>
     </>

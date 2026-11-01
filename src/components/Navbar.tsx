@@ -1,7 +1,11 @@
 import React from 'react';
 import { InbblLogo } from './InbblLogo';
 
-export const Navbar: React.FC = () => {
+interface NavbarProps {
+  onOpenPrivacy?: () => void;
+}
+
+export const Navbar: React.FC<NavbarProps> = ({ onOpenPrivacy }) => {
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-100">
       <div className="max-w-5xl mx-auto px-6 h-18 flex items-center justify-between py-3.5">
@@ -19,6 +23,18 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center gap-6">
           <a href="#features" className="text-xs font-bold text-stone-600 hover:text-black transition">
             Features
+          </a>
+          <a 
+            href="#privacy" 
+            onClick={(e) => {
+              if (onOpenPrivacy) {
+                e.preventDefault();
+                onOpenPrivacy();
+              }
+            }}
+            className="text-xs font-bold text-stone-600 hover:text-black transition cursor-pointer"
+          >
+            Privacy
           </a>
           <a 
             href="#get-app" 
