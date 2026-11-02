@@ -1,5 +1,5 @@
-﻿import React from 'react';
-import { Users, MessageSquare, Phone, MapPin, Sparkles, HeartHandshake } from 'lucide-react';
+import React from 'react';
+import { Users, MessageSquare, Film, MapPin, Sparkles, HeartHandshake } from 'lucide-react';
 import { InbblLogo } from './InbblLogo';
 
 export const Features: React.FC = () => {
@@ -14,17 +14,17 @@ export const Features: React.FC = () => {
     },
     {
       title: 'CHAT',
-      subtitle: 'Private & Ephemeral',
-      desc: 'Confidential 1-on-1 messaging with auto-expiring conversation logs. Your words stay between you and your friend.',
+      subtitle: 'Private & Direct',
+      desc: 'Confidential 1-on-1 messaging with full privacy. Fast, secure, and personal text conversations.',
       icon: MessageSquare,
       color: 'text-inbbl-cyan',
       bg: 'bg-inbbl-cyan/10'
     },
     {
-      title: 'CALL',
-      subtitle: '100% Masked Audio',
-      desc: 'Crystal-clear in-app voice calls. Neither party ever sees or exchanges real personal phone numbers.',
-      icon: Phone,
+      title: 'SNEAKS',
+      subtitle: 'Real Video Moments',
+      desc: 'Watch and create authentic short videos and daily stories. Unfiltered, real moments from people around you.',
+      icon: Film,
       color: 'text-inbbl-emerald',
       bg: 'bg-inbbl-emerald/10'
     },
@@ -38,8 +38,8 @@ export const Features: React.FC = () => {
     },
     {
       title: 'POST',
-      subtitle: 'The Anonymous Wall',
-      desc: 'Share raw thoughts, late-night reflections, or small victories without any profile attached. Receive uplifting warmth.',
+      subtitle: 'Moments & Updates',
+      desc: 'Share photos, status updates, thoughts, and reflections with the community. Connect through genuine life updates.',
       icon: Sparkles,
       color: 'text-inbbl-rose',
       bg: 'bg-inbbl-rose/10'

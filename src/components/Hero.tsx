@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { ArrowRight, CheckCircle2, Loader2, ShieldCheck, Sparkles } from 'lucide-react';
 import { InbblLogo } from './InbblLogo';
 
@@ -149,8 +149,8 @@ export const Hero: React.FC = () => {
                 <span className="text-inbbl-cyan font-extrabold">Encrypted</span>
               </div>
               <div className="flex items-center justify-between">
-                <span>📞 Voice Calls</span>
-                <span className="text-inbbl-emerald font-extrabold">0 Number Shared</span>
+                <span>🎬 Sneaks</span>
+                <span className="text-inbbl-emerald font-extrabold">Short Videos</span>
               </div>
               <div className="flex items-center justify-between">
                 <span>📍 Nearby Map</span>

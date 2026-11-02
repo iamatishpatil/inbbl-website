@@ -9,7 +9,7 @@ interface FooterProps {
 export const Footer: React.FC<FooterProps> = ({ onOpenPrivacy }) => {
   return (
     <>
-      {/* High-Impact Bottom Call to Action */}
+      {/* High-Impact Bottom CTA */}
       <section id="get-app" className="py-24 bg-black text-white text-center relative overflow-hidden">
         <div className="max-w-3xl mx-auto px-6 space-y-6 relative z-10">
           
