@@ -9,7 +9,7 @@ interface PrivacyPolicyProps {
 export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
   return (
     <div className="min-h-screen bg-white text-stone-900 antialiased selection:bg-inbbl-purple selection:text-white">
-      {/* Top Header */}
+      {/* Top Sticky Header */}
       <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-stone-200">
         <div className="max-w-4xl mx-auto px-6 h-18 py-4 flex items-center justify-between">
           <button 
@@ -39,15 +39,15 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
           <h1 className="text-3xl sm:text-5xl font-black tracking-tight text-black">
             Privacy Policy
           </h1>
-          <p className="text-sm text-stone-500 font-medium leading-relaxed">
-            Friend Universe • INBBL (India Bubble) Platform • Last Updated: November 2026
+          <p className="text-sm text-stone-500 font-medium">
+            Friend Universe • INBBL (India Bubble) Platform
           </p>
         </div>
 
         {/* 1. Who we are and what this covers */}
         <section className="space-y-4">
-          <h2 className="text-xl font-extrabold text-black flex items-center gap-2">
-            <span>1. Who we are and what this covers</span>
+          <h2 className="text-xl font-extrabold text-black">
+            1. Who we are and what this covers
           </h2>
           <p className="text-sm text-stone-700 leading-relaxed">
             This Privacy Policy explains what personal data <strong>Friend Universe</strong> ("we", "us") collects when you use the <strong>INBBL (India Bubble)</strong> mobile app on Android and iOS (the "App") and our websites (the "Website"). Together these are the "Platform". "You" means anyone who visits or uses the Platform.
@@ -62,9 +62,10 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
 
           <div className="bg-stone-50 border border-stone-200 p-6 rounded-3xl space-y-3">
             <h3 className="text-xs font-black uppercase tracking-wider text-black">Summary in plain words</h3>
-            <ul className="list-disc pl-5 space-y-1.5 text-xs text-stone-600 leading-relaxed font-medium">
-              <li>We collect the information needed to operate your account and profile, let you create and share posts, stories and Sneaks (short videos), support Go Live broadcasts, provide the Map feature when you grant location permission, and keep the Platform safe.</li>
+            <ul className="list-disc pl-5 space-y-2 text-xs text-stone-600 leading-relaxed font-medium">
+              <li>We collect the information needed to operate your account and profile, let you create and share posts, stories and Sneaks (short videos), provide chat functionality and the Map feature when you grant location permission, and keep the Platform safe.</li>
               <li>We do not sell your personal data.</li>
+              <li><strong>INBBL is a free social app.</strong> We do not charge users for using the App and do not process in-app purchases, wallet balances or user-to-user money transactions.</li>
               <li>Optional analytics, session replay, personalisation and marketing require separate consent where applicable. You can withdraw that consent at any time.</li>
               <li>You can request account deletion through the App or by contacting us. Data is deleted or retained in line with the periods and legal requirements described in section 6.</li>
               <li>Questions or complaints can be sent to our Grievance Officer (section 11).</li>
@@ -107,11 +108,6 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
                   <td className="p-4">You</td>
                 </tr>
                 <tr>
-                  <td className="p-4 font-bold text-black">Go Live</td>
-                  <td className="p-4">Live-stream video and audio, broadcast details, audience/participation information and related usage records</td>
-                  <td className="p-4">Created when you start or participate in a live broadcast</td>
-                </tr>
-                <tr>
                   <td className="p-4 font-bold text-black">Map and location</td>
                   <td className="p-4">Location information made available when you grant location permission and use the Map feature; this may include device location to show or position map-related information</td>
                   <td className="p-4">Your device, with your permission</td>
@@ -123,7 +119,7 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
                 </tr>
                 <tr>
                   <td className="p-4 font-bold text-black">Usage</td>
-                  <td className="p-4">Screens viewed, features used, taps and session events, searches and interactions with posts, stories, Sneaks and live broadcasts</td>
+                  <td className="p-4">Screens viewed, features used, taps and session events, searches and interactions with posts, stories, Sneaks and chats</td>
                   <td className="p-4">Your device</td>
                 </tr>
                 <tr>
@@ -135,17 +131,10 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
             </table>
           </div>
 
-          <div className="space-y-2 pt-2">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-black">Location permission and control</h4>
-            <p className="text-xs text-stone-600 leading-relaxed">
+          <div className="p-4 bg-stone-50 border border-stone-200 rounded-2xl space-y-1.5 text-xs text-stone-600">
+            <h4 className="font-bold text-black uppercase tracking-wider">Location permission and control</h4>
+            <p className="leading-relaxed">
               The Map feature uses location information only when you grant the relevant permission and use the feature. You can deny or withdraw location permission through your device settings. If you do, location-based parts of the Map feature may not work. We do not use this permission to track your location continuously in the background.
-            </p>
-          </div>
-
-          <div className="space-y-2 pt-2">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-black">What we do not collect</h4>
-            <p className="text-xs text-stone-600 leading-relaxed">
-              We do not read your phone contacts or SMS. We do not collect location through the Map feature unless you grant the relevant device permission. We do not store your full card or UPI details; where payments are supported, the payment provider handles those details.
             </p>
           </div>
         </section>
@@ -180,8 +169,8 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
                   <td className="p-4">Your consent to use the service and performance of our Terms</td>
                 </tr>
                 <tr>
-                  <td className="p-4 font-bold text-black">Go Live</td>
-                  <td className="p-4">Start, deliver and display live broadcasts; support participation; maintain service quality and address abuse or safety reports</td>
+                  <td className="p-4 font-bold text-black">Chat</td>
+                  <td className="p-4">Send, deliver and display chat messages between users and provide message-related safety and support functions</td>
                   <td className="p-4">Your consent to use the feature and performance of our Terms</td>
                 </tr>
                 <tr>
@@ -223,7 +212,7 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
             </table>
           </div>
 
-          <div className="space-y-2 pt-2">
+          <div className="space-y-1.5 pt-2">
             <h4 className="text-xs font-bold uppercase tracking-wider text-black">Automated content review</h4>
             <p className="text-xs text-stone-600 leading-relaxed">
               Images and videos you upload or broadcast may be checked using automated tools to identify content that is prohibited under our Terms. Content flagged by these tools may be restricted, hidden or sent for human review. If you believe a moderation decision is wrong, contact us using the details in section 11 for review.
@@ -240,10 +229,9 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
             We do not sell your personal data. We share it only as described below:
           </p>
           <ul className="space-y-3 text-xs text-stone-600 leading-relaxed font-medium">
-            <li><strong>Other users:</strong> Depending on your privacy settings and the nature of the feature, other users may be able to see your name, username, profile photo, profile information and content you make available through posts, stories, Sneaks or Go Live. Content shared publicly may be viewed, saved or reshared by others. You can use available privacy, block and report controls.</li>
-            <li><strong>Service providers (Data Processors):</strong> We may use service providers for hosting, storage, content delivery, live-stream infrastructure, security, moderation, analytics, notifications and technical support. They may process personal data only to provide services to us and under appropriate contractual arrangements.</li>
+            <li><strong>Other users:</strong> Depending on your privacy settings and the nature of the feature, other users may be able to see your name, username, profile photo, profile information and content you make available through posts, stories, Sneaks and chats. Chat messages are visible to the users participating in the relevant conversation. Content shared publicly may be viewed, saved or reshared by others. You can use available privacy, block and report controls.</li>
+            <li><strong>Service providers (Data Processors):</strong> We may use service providers for hosting, storage, content delivery, chat infrastructure, security, moderation, analytics, notifications and technical support. They may process personal data only to provide services to us and under appropriate contractual arrangements. The specific providers should be identified in this policy once the production vendor list is confirmed.</li>
             <li><strong>Legal and safety:</strong> We may disclose information when required by law, court order or lawful government request, or when reasonably necessary to protect users, prevent fraud or abuse, or defend our rights.</li>
-            <li><strong>Business transfers:</strong> If Friend Universe is merged, acquired or transfers its business or assets, personal data may be transferred as part of that transaction, subject to applicable law and appropriate notice.</li>
             <li><strong>Transfers outside India:</strong> If a service provider processes or stores personal data outside India, we will do so in accordance with applicable Indian data-protection requirements and contractual safeguards.</li>
           </ul>
         </section>
@@ -268,11 +256,7 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
               <tbody className="divide-y divide-stone-200 text-stone-700">
                 <tr>
                   <td className="p-4 font-bold text-black">Camera</td>
-                  <td className="p-4">Take photos or record videos for your profile, posts, stories and Sneaks, and create video for Go Live</td>
-                </tr>
-                <tr>
-                  <td className="p-4 font-bold text-black">Microphone</td>
-                  <td className="p-4">Capture audio for Sneaks and Go Live broadcasts</td>
+                  <td className="p-4">Take photos or record videos for your profile, posts, stories and Sneaks</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-bold text-black">Photos and videos / media access</td>
@@ -284,7 +268,7 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
                 </tr>
                 <tr>
                   <td className="p-4 font-bold text-black">Notifications</td>
-                  <td className="p-4">Account and security updates, activity related to your content, live broadcasts and other Platform updates</td>
+                  <td className="p-4">Account and security updates, new chat messages, activity related to your content and other Platform updates</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-bold text-black">App Tracking Transparency (iOS), where enabled</td>
@@ -294,7 +278,7 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
             </table>
           </div>
 
-          <div className="space-y-2 pt-2">
+          <div className="space-y-1.5 pt-2">
             <h4 className="text-xs font-bold uppercase tracking-wider text-black">Cookies on the Website</h4>
             <p className="text-xs text-stone-600 leading-relaxed">
               The Website may use cookies and similar technologies to keep you signed in, remember settings and protect the site. Analytics or advertising cookies, where used, will be enabled according to your consent choices and applicable law.
@@ -325,12 +309,8 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
                   <td className="p-4">Kept while your account is active and deleted or anonymised after account deletion, subject to legal requirements</td>
                 </tr>
                 <tr>
-                  <td className="p-4 font-bold text-black">Posts, stories, Sneaks and other uploaded content</td>
+                  <td className="p-4 font-bold text-black">Posts, stories, Sneaks, chat messages and other uploaded content</td>
                   <td className="p-4">Kept while available on the Platform and deleted or anonymised after account deletion, subject to backups, reports, legal holds and content already saved or shared by other users</td>
-                </tr>
-                <tr>
-                  <td className="p-4 font-bold text-black">Go Live records</td>
-                  <td className="p-4">Live media is processed to deliver the broadcast. Any retained broadcast, recording or related metadata is kept only if the feature supports it or it is needed for safety, support or legal purposes</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-bold text-black">Device, usage and security logs</td>
@@ -339,10 +319,6 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
                 <tr>
                   <td className="p-4 font-bold text-black">Support and safety records</td>
                   <td className="p-4">Kept as needed to investigate reports, resolve issues, protect users and comply with law</td>
-                </tr>
-                <tr>
-                  <td className="p-4 font-bold text-black">Financial or tax records, if payments are supported</td>
-                  <td className="p-4">Kept for the period required by applicable tax and company laws</td>
                 </tr>
               </tbody>
             </table>
@@ -361,7 +337,7 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
             7. Your rights
           </h2>
           <p className="text-sm text-stone-700 leading-relaxed">
-            Subject to applicable law under the DPDP Act, you may have the right to:
+            Subject to applicable law, you may have the right to:
           </p>
           <ul className="list-disc pl-5 space-y-1.5 text-xs text-stone-600 leading-relaxed font-medium">
             <li>Access information about the personal data we process and how we use it.</li>
@@ -406,7 +382,7 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
             11. Grievance Officer and contact
           </h2>
           <p className="text-sm text-stone-700 leading-relaxed">
-            In line with applicable Indian data-protection and information-technology requirements, our designated Grievance Officer is:
+            In line with applicable Indian data-protection and information-technology requirements, our Grievance Officer is:
           </p>
 
           <div className="bg-black text-white p-6 sm:p-8 rounded-3xl shadow-xl space-y-4 max-w-lg">
