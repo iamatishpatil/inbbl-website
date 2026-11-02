@@ -434,6 +434,10 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
         </section>
 
       </main>
+
+      <footer className="py-8 border-t border-stone-200 text-center text-xs text-stone-500 bg-white">
+        <p>© 2026 Friends Universe Private Limited. All rights reserved.</p>
+      </footer>
     </div>
   );
 };

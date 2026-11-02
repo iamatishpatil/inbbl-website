@@ -71,7 +71,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPrivacy }) => {
             </a>
             <a href="mailto:support@inbbl.com" className="hover:text-black transition">Contact</a>
           </div>
-          <p>© 2026 Friend Universe (INBBL). All rights reserved.</p>
+          <p>© 2026 Friends Universe Private Limited. All rights reserved.</p>
         </div>
       </footer>
     </>
