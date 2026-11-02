@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="inbbl-purple" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="50%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#5B21B6" />
+    </linearGradient>
+
+    <!-- Top Dot / Person Sphere Gradient -->
+    <radialGradient id="dot-glow" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="45%" stop-color="#DDD6FE" />
+      <stop offset="85%" stop-color="#A78BFA" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </radialGradient>
+
+    <!-- Speech Bubble Gradient -->
+    <linearGradient id="bubble-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F3E8FF" />
+    </linearGradient>
+
+    <!-- Dolphin Gradient -->
+    <linearGradient id="dolphin-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6D28D9" />
+      <stop offset="100%" stop-color="#4C1D95" />
+    </linearGradient>
+
+    <!-- Inner Shadow -->
+    <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#3B0764" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- iOS-Style Squircle Background (Corner radius 115 on 512x512) -->
+  <rect width="512" height="512" rx="115" fill="url(#inbbl-purple)" />
+
+  <!-- Top "You" Person Sphere / Glowing Dot -->
+  <circle cx="256" cy="118" r="38" fill="url(#dot-glow)" filter="url(#soft-shadow)" />
+
+  <!-- Speech Bubble Body -->
+  <g filter="url(#soft-shadow)">
+    <!-- Speech Bubble Main Silhouette -->
+    <path
+      d="M 256,182 
+         C 334,182 396,238 396,306 
+         C 396,374 334,428 256,428 
+         C 228,428 202,421 179,409 
+         C 142,425 120,432 116,428 
+         C 114,426 120,404 126,381 
+         C 119,360 116,334 116,306 
+         C 116,238 178,182 256,182 Z"
+      fill="url(#bubble-fill)"
+    />
+
+    <!-- Stylized Joyful Jumping Dolphin -->
+    <path
+      d="M 188,336
+         C 192,308 214,272 254,258
+         C 282,248 316,252 338,274
+         C 328,272 312,274 300,282
+         C 316,284 326,294 332,306
+         C 312,298 290,298 274,306
+         C 260,314 252,328 244,346
+         C 236,334 222,326 210,326
+         C 200,326 192,330 188,336 Z"
+      fill="url(#dolphin-grad)"
+    />
+
+    <!-- Dolphin Eye Accent -->
+    <circle cx="314" cy="272" r="3.5" fill="#FFFFFF" />
+
+    <!-- Dolphin Joyful Fin Accent -->
+    <path
+      d="M 254,298
+         C 258,290 268,284 274,286
+         C 272,294 266,302 258,306
+         Z"
+      fill="url(#dolphin-grad)"
+    />
+  </g>
+</svg>
