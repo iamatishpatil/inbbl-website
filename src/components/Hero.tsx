@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { ArrowRight, CheckCircle2, Loader2, ShieldCheck, Sparkles } from 'lucide-react';
 import { InbblLogo } from './InbblLogo';
 
@@ -66,7 +66,7 @@ export const Hero: React.FC = () => {
           </h1>
 
           <p className="text-base text-stone-600 max-w-lg leading-relaxed">
-            Tired of doomscrolling and superficial feeds? <strong>INBBL</strong> connects you 1-on-1 with genuine people across India in your language. Chat, talk it out, and make friends — 100% anonymous, safe, and judgment-free.
+            Tired of doomscrolling and superficial feeds? <strong>INBBL</strong> connects you 1-on-1 with genuine people across India in your language. Chat, talk it out, and make friends - 100% anonymous, safe, and judgment-free.
           </p>
 
           {/* Clean 1-field Google Sheets early access input */}

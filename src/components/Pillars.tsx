@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Users, MessageSquare, Phone, MapPin, Sparkles } from 'lucide-react';
 import { InbblLogo } from './InbblLogo';
 
@@ -70,7 +70,7 @@ export const Pillars: React.FC = () => {
                 Why a Dolphin?
               </h3>
               <p className="text-sm text-stone-600 leading-relaxed">
-                Dolphins are social, playful, and always connected. They bring people together — just like <strong>INBBL</strong>.
+                Dolphins are social, playful, and always connected. They bring people together - just like <strong>INBBL</strong>.
               </p>
 
               <div className="grid sm:grid-cols-3 gap-3 pt-2">

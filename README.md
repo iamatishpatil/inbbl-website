@@ -1,4 +1,4 @@
-# INBBL — Same world. Closer.
+﻿# INBBL - Same world. Closer.
 
 Official website for **INBBL**, a social app for real 1-on-1 conversations, voice calls, and real moments across India.
 

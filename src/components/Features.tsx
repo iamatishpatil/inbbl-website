@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Users, MessageSquare, Phone, MapPin, Sparkles, HeartHandshake } from 'lucide-react';
 import { InbblLogo } from './InbblLogo';
 
@@ -59,7 +59,7 @@ export const Features: React.FC = () => {
             Built for genuine connection.
           </h2>
           <p className="text-sm text-stone-600 mt-3 leading-relaxed">
-            Everything you need to talk, listen, and make real friends — without the vanity metrics, follower counts, or algorithms.
+            Everything you need to talk, listen, and make real friends - without the vanity metrics, follower counts, or algorithms.
           </p>
         </div>
 

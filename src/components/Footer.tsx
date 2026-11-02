@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Apple, Play, ArrowUpRight } from 'lucide-react';
 import { InbblLogo } from './InbblLogo';
 
@@ -54,7 +54,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPrivacy }) => {
           <div className="flex items-center gap-2.5">
             <InbblLogo variant="mark" size="xs" className="w-5 h-7" />
             <span className="font-extrabold text-black">INBBL</span>
-            <span>— Same world. Closer.</span>
+            <span>- Same world. Closer.</span>
           </div>
           <div className="flex items-center gap-6 font-semibold text-stone-600">
             <a 

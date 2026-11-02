@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 interface InbblLogoProps {
   variant?: 'mark' | 'full' | 'icon' | 'solid';
@@ -39,7 +39,7 @@ export const InbblLogo: React.FC<InbblLogoProps> = ({
     return (
       <img 
         src="/assets/inbbl-full-logo.png" 
-        alt="INBBL — Same world. Closer." 
+        alt="INBBL - Same world. Closer." 
         className={`${fullSizes[size]} w-auto object-contain ${className}`} 
       />
     );
