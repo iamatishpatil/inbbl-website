@@ -3,9 +3,10 @@ import { InbblLogo } from './InbblLogo';
 
 interface NavbarProps {
   onOpenPrivacy?: () => void;
+  onOpenTerms?: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ onOpenPrivacy }) => {
+export const Navbar: React.FC<NavbarProps> = ({ onOpenPrivacy, onOpenTerms }) => {
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-100">
       <div className="max-w-5xl mx-auto px-6 h-18 flex items-center justify-between py-3.5">

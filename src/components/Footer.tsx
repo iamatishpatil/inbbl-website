@@ -4,9 +4,10 @@ import { InbblLogo } from './InbblLogo';
 
 interface FooterProps {
   onOpenPrivacy?: () => void;
+  onOpenTerms?: () => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ onOpenPrivacy }) => {
+export const Footer: React.FC<FooterProps> = ({ onOpenPrivacy, onOpenTerms }) => {
   return (
     <>
       {/* High-Impact Bottom CTA */}
@@ -57,6 +58,18 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPrivacy }) => {
             <span>- Same world. Closer.</span>
           </div>
           <div className="flex items-center gap-6 font-semibold text-stone-600">
+            <a 
+              href="#terms" 
+              onClick={(e) => {
+                if (onOpenTerms) {
+                  e.preventDefault();
+                  onOpenTerms();
+                }
+              }} 
+              className="hover:text-black transition cursor-pointer"
+            >
+              Terms of Service
+            </a>
             <a 
               href="#privacy" 
               onClick={(e) => {

@@ -4,9 +4,10 @@ import { InbblLogo } from './InbblLogo';
 
 interface PrivacyPolicyProps {
   onBack: () => void;
+  onOpenTerms?: () => void;
 }
 
-export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
+export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack, onOpenTerms }) => {
   return (
     <div className="min-h-screen bg-white text-stone-900 antialiased selection:bg-inbbl-purple selection:text-white">
       {/* Top Sticky Header */}
@@ -53,7 +54,14 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
             This Privacy Policy explains what personal data <strong>Friend Universe</strong> ("we", "us") collects when you use the <strong>INBBL (India Bubble)</strong> mobile app on Android and iOS (the "App") and our websites (the "Website"). Together these are the "Platform". "You" means anyone who visits or uses the Platform.
           </p>
           <p className="text-sm text-stone-700 leading-relaxed">
-            We are the <strong>Data Fiduciary</strong> for your personal data under India's <strong>Digital Personal Data Protection Act, 2023 ("DPDP Act")</strong> and the <strong>Information Technology Act, 2000</strong> and its rules. This policy is our notice to you under those laws. It should be read with our Terms of Service. Where the two conflict on how we handle personal data, this policy wins.
+            We are the <strong>Data Fiduciary</strong> for your personal data under India's <strong>Digital Personal Data Protection Act, 2023 ("DPDP Act")</strong> and the <strong>Information Technology Act, 2000</strong> and its rules. This policy is our notice to you under those laws. It should be read with our{' '}
+            <button 
+              onClick={onOpenTerms} 
+              className="text-inbbl-purple font-bold underline hover:text-black transition cursor-pointer"
+            >
+              Terms of Service
+            </button>
+            . Where the two conflict on how we handle personal data, this policy wins.
           </p>
           <div className="p-4 bg-rose-50 border border-rose-200 rounded-2xl text-xs font-bold text-rose-800 flex items-center gap-2.5">
             <AlertCircle className="w-4 h-4 shrink-0 text-rose-600" />
@@ -422,13 +430,19 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
           <p className="text-xs text-stone-600 leading-relaxed">
             We may update this policy when our Platform, data practices or legal requirements change. We will publish the updated version with its effective date and provide notice of material changes where required by law.
           </p>
-          <div className="pt-4">
+          <div className="pt-4 flex flex-wrap items-center gap-4">
             <button 
               onClick={onBack}
-              className="bg-black hover:bg-stone-800 text-white font-extrabold text-xs px-6 py-3 rounded-full transition shadow-md inline-flex items-center gap-2"
+              className="bg-black hover:bg-stone-800 text-white font-extrabold text-xs px-6 py-3 rounded-full transition shadow-md inline-flex items-center gap-2 cursor-pointer"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>Back to INBBL Home</span>
+            </button>
+            <button 
+              onClick={onOpenTerms}
+              className="bg-stone-100 hover:bg-stone-200 text-black font-extrabold text-xs px-6 py-3 rounded-full transition cursor-pointer"
+            >
+              View Terms of Service
             </button>
           </div>
         </section>
